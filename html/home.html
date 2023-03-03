@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>  
+    <title>Ride On</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="../style/home.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../assets/images/favicon.png" />
+
+    <!-- Librairie pour effets d'apparition -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="../js/script.js" type="text/javascript" defer></script>
+
+</head>
+<body>
+    <div class="background bg-home">
+    
+        <!-- Début header -->
+        <header class="header" data-aos="fade-down">
+
+            <div class="box-logo">
+                <a href="home.html">
+                    <img src="../assets/images/header/logo.png" alt="Logo du site">
+                </a>
+            </div>
+      
+            <nav class="navbar" role="navigation">
+               <a href="home.html">Accueil</a>
+               <a href="about.html">A propos</a>
+               <a href="destinations.html">Destinations</a>
+               <a href="planning.html">Planning</a>
+               <a href="contact.html">Contact</a>
+            </nav>
+      
+            <!-- Menu burger -->
+            <div id="menu-btn" class="fas fa-bars"></div>
+
+        </header>
+        <!-- Fin header -->
+
+        <!-- Début Accueil -->
+        <main class="home" role="content" data-aos="zoom-out">
+
+            <div class="home-presentation">
+                <h1 class="heading">Ride On</h1>
+                <h2>Vivez l'aventure avec nous dès maintenant</h2>
+                <p>Rejoignez-nous pour des balades en moto inoubliables et découvrir de nouvelles destinations en deux roues.</p>
+            </div>
+            
+            <div class="home-buttons">
+                <button type="button" class="btn" onclick="window.location.href='about.html'">En savoir plus</a>
+                <button type="button" class="btn" onclick="window.location.href='planning.html'">Réserver</button>
+             </div>
+
+        </main>
+        <!-- Fin Accueil -->
+
+        <!-- Début Footer -->
+        <footer>
+            <p>Créé par Richard Befayt | &copy;2023</p>
+        </footer>
+        <!-- Fin Footer -->
+
+    </div>
+</body>
+</html>

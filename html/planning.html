@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <link rel="stylesheet" href="../style/index.css" />
-        <link rel="stylesheet" href="../style/about.css" />
+        <link rel="stylesheet" href="../style/planning.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="icon" href="./assets/images/favicon.png" />
     
@@ -15,29 +15,29 @@
         <title>Ride On</title>
     </head>
 <body>
-    <header>
-        <nav class="navbar dark-mode" role="navigation">
-            <div class="navbar__logo">
-                <a href="../index.html">
-                    <span>
-                        <img src="../assets/images/logo.png" alt="Logo du site">
-                    </span>
-                </a>
+    <!-- Début header -->
+    <header class="header" data-aos="fade-down">
+
+        <div class="box">
+            <div class="box-logo">
+                <img src="../assets/images/header/logo.png" alt="Logo du site">
             </div>
-
-            <ul class="navbar__links">
-                <li class="navbar__link first"><a href="../index.html">Accueil</a></li>
-                <li class="navbar__link second"><a href="./html/about.html">A propos</a></li>
-                <li class="navbar__link third"><a href="./destinations.html">Destinations</a></li>
-                <li class="navbar__link third"><a href="./destinations.html">Planning</a></li>
-                <li class="navbar__link four"><a href="./contact.html">Contact</a></li>
-            </ul>
-
-            <button class="burger">
-                <span class="bar"></span>
-            </button>
+            <a href="home.html">Ride On</a>
+        </div>
+  
+        <nav class="navbar" role="navigation">
+           <a href="home.html">Accueil</a>
+           <a href="about.html">A propos</a>
+           <a href="destinations.html">Destinations</a>
+           <a href="planning.html">Planning</a>
+           <a href="contact.html">Contact</a>
         </nav>
+  
+        <!-- Menu burger -->
+        <div id="menu-btn" class="fas fa-bars"></div>
+
     </header>
+    <!-- Fin header -->
 
     <main>
         <p>Pas de calendrier : mais des cartes qu'on sélectionne</p>

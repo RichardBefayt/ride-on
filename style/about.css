@@ -1,4 +1,14 @@
-main {
-    padding: 1rem;
-    background-color: rgb(226, 121, 22);
+.bg-about {
+    background-color: #663d2e;
+    background: url('../assets/images/about/about-bg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
 }
+
+.about {
+
+    padding: 1rem;
+}
+
