@@ -1,47 +1,162 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
+    <head>  
+        <title>Ride On</title>
+    
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+        <!-- Style -->
         <link rel="stylesheet" href="../style/index.css" />
         <link rel="stylesheet" href="../style/destinations.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" href="./assets/images/favicon.png" />
+        <link rel="icon" href="../assets/images/favicon.png" />
     
-        <script src="../script.js" type="text/javascript" defer></script>
+        <!-- Librairie pour effets d'apparition -->
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
-        <title>Ride On</title>
+        <!-- Scripts -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+        <script src="../js/script.js" type="text/javascript" defer></script>
+    
     </head>
-<body>
-    <!-- Début header -->
-    <header class="header" data-aos="fade-down">
+    <body style="overflow: hidden;">
+        <div class="background bg-destinations">
 
-        <div class="box">
-            <div class="box-logo">
-                <img src="../assets/images/header/logo.png" alt="Logo du site">
-            </div>
-            <a href="home.html">Ride On</a>
+            <!-- Début header -->
+            <header class="header" data-aos="fade-down">
+    
+                <div class="box-logo">
+                    <a href="home.html">
+                        <img src="../assets/images/header/logo.png" alt="Logo du site">
+                    </a>
+                </div>
+          
+                <nav class="navbar" role="navigation">
+                   <a href="home.html">Accueil</a>
+                   <a href="about.html">A propos</a>
+                   <a href="destinations.html">Destinations</a>
+                   <a href="planning.html">Planning</a>
+                   <a href="contact.html">Contact</a>
+                </nav>
+          
+                <!-- Menu burger -->
+                <div id="menu-btn" class="fas fa-bars"></div>
+    
+            </header>
+            <!-- Fin header -->
+    
+            <!-- Début Destinations -->
+            <main class="destinations">
+
+                <h1 class="heading" data-aos="zoom-out">Destinations</h1>
+             
+                <section class="grid">
+             
+                   <div class="box" data-aos="zoom-in">
+                        <img src="../assets/images/destinations/destination-1.jpg" alt="">
+                        <h3><span>istanbul</span></h3>
+                   </div>
+                   <div class="box" data-aos="zoom-in">
+                        <img src="../assets/images/destinations/destination-2.jpg" alt="">
+                      <h3><span>california</span></h3>
+                   </div>
+                   <div class="box" data-aos="zoom-in">
+                        <img src="../assets/images/destinations/destination-3.jpg" alt="">
+                        <h3><span>london</span></h3>
+                   </div>
+                   <div class="box" data-aos="zoom-in">
+                        <img src="../assets/images/destinations/destination-4.jpg" alt="">
+                        <h3><span>morocco</span></h3>
+                   </div>
+                   <div class="box" data-aos="zoom-in">
+                        <img src="../assets/images/destinations/destination-5.jpg" alt="">
+                        <h3><span>new york</span></h3>
+                   </div>
+                   <div class="box" data-aos="zoom-in">
+                        <img src="../assets/images/destinations/destination-6.jpg" alt="">
+                        <h3><span>paris</span></h3>
+                   </div>
+                   <div class="box" data-aos="zoom-in">
+                        <img src="../assets/images/destinations/destination-7.jpg" alt="">
+                        <h3><span>barcelona</span></h3>
+                   </div>
+                   <div class="box" data-aos="zoom-in">
+                        <img src="../assets/images/destinations/destination-8.jpg" alt="">
+                        <h3><span>sydney</span></h3>
+                   </div>
+                   <div class="box" data-aos="zoom-in">
+                        <img src="../assets/images/destinations/destination-9.jpg" alt="">
+                        <h3><span>tokyo</span></h3>
+                   </div>
+             
+                </section>
+
+                <h2>Les plus demandées</h2>
+
+                <section class="grid">
+
+                    <div class="box" data-aos="fade-up">
+                       <div class="price"><i class="fas fa-euro-sign"></i><span>1299</span></div>
+                       <img src="../assets/images/tours/tour-img-1.webp" class="image" alt="">
+                       <h3 class="name">taj mahal</h3>
+                       <p class="address">agra, india</p>
+                       <a href="#" class="btn">En savoir plus</a>
+                    </div>
+              
+                    <div class="box" data-aos="fade-up">
+                       <p class="price"><i class="fas fa-euro-sign"></i><span>1999</span></p>
+                       <img src="../assets/images/tours/tour-img-2.webp" alt="" class="image">
+                       <h3 class="name">tokyo</h3>
+                       <p class="address">tokyo, japan</p>
+                       <a href="#" class="btn">En savoir plus</a>
+                    </div>
+              
+                    <div class="box" data-aos="fade-up">
+                       <p class="price"><i class="fas fa-euro-sign"></i><span>3000</span></p>
+                       <img src="../assets/images/tours/tour-img-3.webp" alt="" class="image">
+                       <h3 class="name">hawaii</h3>
+                       <p class="address">hawaii, united state</p>
+                       <a href="#" class="btn">En savoir plus</a>
+                    </div>
+              
+                    <div class="box" data-aos="fade-up">
+                       <p class="price"><i class="fas fa-euro-sign"></i><span>1203</span></p>
+                       <img src="../assets/images/tours/tour-img-4.webp" alt="" class="image">
+                       <h3 class="name">london</h3>
+                       <p class="address">england, U.K.</p>
+                       <a href="#" class="btn">En savoir plus</a>
+                    </div>
+              
+                    <div class="box" data-aos="fade-up">
+                       <p class="price"><i class="fas fa-euro-sign"></i><span>1999</span></p>
+                       <img src="../assets/images/tours/tour-img-5.webp" alt="" class="image">
+                       <h3 class="name">lotus temple</h3>
+                       <p class="address">new delhi, india</p>
+                       <a href="#" class="btn">En savoir plus</a>
+                    </div>
+              
+                    <div class="box" data-aos="fade-up">
+                       <p class="price"><i class="fas fa-euro-sign"></i><span>1000</span></p>
+                       <img src="../assets/images/tours/tour-img-6.webp" alt="" class="image">
+                       <h3 class="name">Arc de Triomphe</h3>
+                       <p class="address">Paris, France</p>
+                       <a href="#" class="btn">En savoir plus</a>
+                    </div>
+              
+                 </section>
+              
+             
+             </main>
+             <!-- Fin Destinations -->
+            
+            <!-- Début Footer -->
+            <footer class="footer">
+                <p>Créé par Richard Befayt | &copy;2023</p>
+            </footer>
+            <!-- Fin Footer -->
+    
         </div>
-  
-        <nav class="navbar" role="navigation">
-           <a href="home.html">Accueil</a>
-           <a href="about.html">A propos</a>
-           <a href="destinations.html">Destinations</a>
-           <a href="planning.html">Planning</a>
-           <a href="contact.html">Contact</a>
-        </nav>
-  
-        <!-- Menu burger -->
-        <div id="menu-btn" class="fas fa-bars"></div>
-
-    </header>
-    <!-- Fin header -->
-
-    <main>
-       
-    </main>
-
-</body>
+    </body>
 </html>

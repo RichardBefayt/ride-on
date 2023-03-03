@@ -1,56 +1,85 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
+    <head>  
+        <title>Ride On</title>
+    
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+        <!-- Style -->
         <link rel="stylesheet" href="../style/index.css" />
         <link rel="stylesheet" href="../style/planning.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" href="./assets/images/favicon.png" />
+        <link rel="icon" href="../assets/images/favicon.png" />
     
-        <script src="../script.js" type="text/javascript" defer></script>
+        <!-- Librairie pour effets d'apparition -->
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
-        <title>Ride On</title>
+        <!-- Scripts -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+        <script src="../js/script.js" type="text/javascript" defer></script>
+    
     </head>
-<body>
-    <!-- Début header -->
-    <header class="header" data-aos="fade-down">
+    <body style="overflow: hidden;">
+        <div class="background bg-planning">
 
-        <div class="box">
-            <div class="box-logo">
-                <img src="../assets/images/header/logo.png" alt="Logo du site">
-            </div>
-            <a href="home.html">Ride On</a>
-        </div>
-  
-        <nav class="navbar" role="navigation">
-           <a href="home.html">Accueil</a>
-           <a href="about.html">A propos</a>
-           <a href="destinations.html">Destinations</a>
-           <a href="planning.html">Planning</a>
-           <a href="contact.html">Contact</a>
-        </nav>
-  
-        <!-- Menu burger -->
-        <div id="menu-btn" class="fas fa-bars"></div>
-
-    </header>
-    <!-- Fin header -->
-
-    <main>
-        <p>Pas de calendrier : mais des cartes qu'on sélectionne</p>
-        <div class="card">
-            <h2>Réservez votre séjour</h2>
-            <div>Prix de la journée par personne : <span id="dayPrice">46</span> €</div>
-            <div>Nombre de personnes : <span id="personPrice">5</span></div>
+            <!-- Début header -->
+            <header class="header" data-aos="fade-down">
     
+                <div class="box-logo">
+                    <a href="home.html">
+                        <img src="../assets/images/header/logo.png" alt="Logo du site">
+                    </a>
+                </div>
+          
+                <nav class="navbar" role="navigation">
+                   <a href="home.html">Accueil</a>
+                   <a href="about.html">A propos</a>
+                   <a href="destinations.html">Destinations</a>
+                   <a href="planning.html">Planning</a>
+                   <a href="contact.html">Contact</a>
+                </nav>
+          
+                <!-- Menu burger -->
+                <div id="menu-btn" class="fas fa-bars"></div>
+    
+            </header>
+            <!-- Fin header -->
+    
+            <!-- Début Destinations -->
+            <main class="planning">
+
+                <h1 class="heading" data-aos="zoom-out">Planning</h1>
+             
+                <section class="flex" data-aos="zoom-in" data-aos-delay="600">
+
+                    <form action="" method="post">
+                       <h3>Recherchez votre circuit</h3>
+              
+                       <p>Destination</p>
+                       <input type="text" name="location" required maxlength="50" placeholder="Lieu" class="box">
+              
+                       <p>Date</p>
+                       <input type="date" name="date" class="box" required>
+              
+                       <p>Participants</p>
+                       <input type="number" name="guests" min="1" max="10" maxlength="2" placeholder="Entrez le nombre de personnes" required class="box">
+              
+                       <input type="submit" value="Valider" name="search" class="btn">
+                    </form>
+              
+                 </section>
+             
+             </main>
+             <!-- Fin Destinations -->
             
+            <!-- Début Footer -->
+            <footer class="footer">
+                <p>Créé par Richard Befayt | &copy;2023</p>
+            </footer>
+            <!-- Fin Footer -->
     
-            <h2>Total : <span id="total"></span> €</h2>
         </div>
-    </main>
-
-</body>
+    </body>
 </html>

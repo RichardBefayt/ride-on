@@ -1,0 +1,244 @@
+/***** Réglages généraux *****/
+/*** imports ***/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+/*** Variables ***/
+:root {
+    --percent100: 100%;
+    --percent50: 50%;
+
+    --font-size: 1rem;
+
+    --main-color:#000000;
+    --white:#fff;
+    --light-white:#ffffff80;
+    --orange: #ff9f1a;
+    --black:#000;
+    --light-black:#2e313e;
+}
+
+/*** Global ***/
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    scrollbar-color: var(--orange);
+    scrollbar-width: thin; /* Uniquement pour Firefox */
+}
+
+*::selection {
+    color: var(--black);
+    background-color: var(--main-color);
+}
+
+*::-webkit-scrollbar {
+    width: 1rem;
+    height: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color:var(--orange);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: var(--font-size);
+    font-family: 'Poppins', sans-serif;
+    color: var(--white);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+footer {
+    flex-shrink: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.btn {
+    cursor: pointer;
+    display: block;
+    border-radius: .5rem;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1.2rem 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--white);
+    background: var(--light-black);
+    transition: .2s linear;
+}
+.btn:hover {
+    color: var(--black);
+    background: var(--orange);
+}
+
+#menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: -1000;
+}
+
+/*** En-tête ***/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.5rem;
+    background: linear-gradient(0deg, transparent, var(--black));
+}
+
+.header .box-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.header .box-logo img {
+    width: var(--percent100);
+    height: auto;
+}
+
+.header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.navbar a {
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    color: var(--light-white);
+    transition: .2s linear;
+}
+
+.navbar a:hover {
+    color: var(--orange);
+}
+
+/***** Responsive *****/
+/* Pour les écrans de bureau */
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+   .heading {
+        margin-bottom: 3rem;
+        font-size: calc(1vw + 7rem);
+   }
+
+    p {
+        font-size: calc(0.5vw + 1rem);
+    }
+}
+
+/* Pour les tablettes */
+@media (max-width:788px) {
+
+    #menu-btn {
+       display: inline-block;
+    }
+    
+    .background .header {
+       position: relative;
+    }
+ 
+    .background .header .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 100%; 
+        left: 2rem; 
+        right: 2rem;
+        padding: 1.5rem .5rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(.4rem);
+        border-radius: .5rem;
+        transform: scale(0);
+        transform-origin: top right; /* D'où viendra l'animation */
+        z-index: 1000;
+    }
+    .background .header .navbar.active {
+        transform: scale(1);
+        transition: .2s linear;
+    }
+ 
+    .background .header .navbar a {
+       display: block;
+       padding: 1rem;
+       margin: 0.5rem 1rem;
+       color: var(--white);
+       border-radius: 0.5rem;
+    }
+    .background .header .navbar a:hover {
+       background-color: var(--orange);
+    }
+ 
+    .heading {
+       font-size: 5rem;
+    }
+ 
+ }
+
+@media (max-width: 640px) {
+
+}
+
+@media (max-width:450px) {
+    html {
+       font-size: 50%;
+    }
+ 
+    .heading {
+       font-size: 3rem;
+    }
+}

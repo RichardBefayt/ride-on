@@ -1,0 +1,54 @@
+.bg-planning {
+    background: url('../assets/images/planning/planning-bg.jpg') no-repeat rgba(0,0,0,.5);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+}
+
+.planning h1 {
+    font-size: calc(1vw + 5rem);
+    text-align: center;
+}
+
+.planning .flex {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planning .flex form {
+    width: 50rem;
+    padding: 2rem;
+    background-color: var(--light-bg);
+    backdrop-filter: blur(.4rem);
+    border-radius: .5rem;
+}
+
+.planning .flex form h3 {
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.planning .flex form p {
+    padding-top: 1rem;
+    font-size: 1.7rem;
+    color: var(--light-white);
+}
+
+.planning .flex form .box {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    text-transform: none;
+    color: var(--white);
+    background: var(--light-black);
+    border-radius: .5rem;
+}
+.planning .flex form .box::placeholder {
+    color: var(--light-white);
+}
