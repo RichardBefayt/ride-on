@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <link rel="stylesheet" href="../style/index.css" />
-        <link rel="stylesheet" href="../style/contact.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" href="./assets/images/favicon.png" />
-    
-        <script src="../script.js" type="text/javascript" defer></script>
-    
-        <title>Ride On</title>
-    </head>
+   <head>  
+      <title>Ride On</title>
+  
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+      <!-- Style -->
+      <link rel="stylesheet" href="../style/index.css" />
+      <link rel="stylesheet" href="../style/contact.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="icon" href="../assets/images/favicon.png" />
+  
+      <!-- Librairie pour effets d'apparition -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+      <!-- Scripts -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+      <script src="../js/script.js" type="text/javascript" defer></script>
+  
+  </head>
 <body style="overflow: hidden;">
     <div class="background bg-contact">
     
@@ -53,11 +60,15 @@
                   <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5231.8338708840665!2d2.097355307522967!3d49.03118683087201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6f54fce1926e7%3A0x227f88f4143a01ac!2s59%20Av.%20Roger%20Guichard%2C%2095610%20%C3%89ragny!5e0!3m2!1sfr!2sfr!4v1677677240405!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-aos="flip-left"></iframe>
          
                   <form action="" method="post" data-aos="flip-right">
-                     <h3>Pour nous écrire</h3>
+
                      <input type="text" name="name" required maxlength="50" placeholder="Nom" class="box">
+
                      <input type="email" name="email" required maxlength="50" placeholder="Email" class="box">
+
                      <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="N° de tel" class="box">
+
                      <textarea name="message" class="box" required maxlength="1000" cols="30" rows="10"></textarea>
+
                      <input type="submit" value="Valider" name="send" class="btn">
                   </form>
          
@@ -83,10 +94,6 @@
                      <a href="#">59 avenue Roger Guichard - 95610 Éragny</a>
                   </div>
          
-               </div>
-         
-               <div class="credit">
-                  &copy; Copyright @ 2023 by <span>Richard Befayt</span> | Tous droits réservés !
                </div>
          
             </section>
